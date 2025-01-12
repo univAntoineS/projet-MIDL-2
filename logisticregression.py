@@ -58,7 +58,6 @@ for i in multiclass:
             model = logistic_model(1, j, i)
             model.fit(X_train, y_train)
             predictions = model.predict(X_test)
-            print(predictions)
             params.append(i + ' ' + j)
             accuracy = accuracy_score(y_test, predictions)
             scores.append(accuracy)
