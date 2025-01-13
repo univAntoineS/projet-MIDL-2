@@ -17,7 +17,7 @@ if inp == "1":
 
     data = data[data["Season"]!="Winter"]
 
-    data = addAll(data,["NOC","Year"])
+    data = addAll(data,["NOC"])
     data.to_csv("data/data.csv")
 
 else :
