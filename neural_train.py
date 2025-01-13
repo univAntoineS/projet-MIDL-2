@@ -52,7 +52,7 @@ for i in range(layerNumber):
 model.add(Dense(3,  activation='softmax'))
 
 model_checkpoint_callback = keras.callbacks.ModelCheckpoint("nn/checkpoint.model.keras")
-model.compile(optimizer="rmsprop", loss="categorical_crossentropy",metrics=['accuracy'])
+model.compile(optimizer=keras.optimizers.Adam(learning_rate=0.0001), loss="categorical_crossentropy",metrics=['accuracy'])
 
 
 
